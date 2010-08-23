@@ -1,0 +1,13 @@
+Source: wonderland
+Priority: optional
+Maintainer: Knyazev Andrey <knevcher@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Section: devel
+Homepage: http://alicetheapp.com/
+
+Package: wonderland
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, alice (>= 0.1)
+Description: web-interface to alice
+

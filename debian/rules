@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+
+ALICE_DIR=/usr/lib/erlang/lib/alice
+WEB_DIR = $(CURDIR)/debian/wonderland$(ALICE_DIR)/web/
+
+build: build-stamp
+build-stamp:
+	dh build
+	touch build-stamp
+clean:
+	dh clean
+	rm -f build-stamp
+	rm -f install-stamp
+
+override_dh_auto_test:
+override_dh_auto_build:
+
+install: build install-stamp
+	cp -r $(CURDIR)/assets/* $(WEB_DIR)
+
+	install -m 655 -o root -g root $(CURDIR)/index.html $(WEB_DIR)
+
+install-stamp:
+	dh install
+	touch install-stamp
+
+binary-arch: install
+	dh binary-arch
+
+binary-indep: install
+	dh binary-indep
+
+binary: binary-arch binary-indep
+
