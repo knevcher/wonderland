@@ -94,6 +94,7 @@ li {
 }
 
 #sidebar ul li {
+  display:inline;
   margin-left: 0px;
   padding: 0 10px 0 20px;
   background: inherit;
