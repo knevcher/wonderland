@@ -1,5 +1,5 @@
-body { 
-	margin: 20px 0 0 0; 	
+body {
+	margin: 20px 0 0 0;
 }
 
 p {
@@ -19,7 +19,7 @@ li {
 }
 
 .container {
-  width: 888px;
+  width: 1000px;
   margin: 0 auto;
   padding-top: 50px;
   overflow: hidden;
@@ -29,12 +29,12 @@ li {
 #notice,
 #error {
 	width: 888px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	color: #333;
 	height: 0;
 	display: none;
-	padding-left: 10px;	
-	padding-top: 10px;	
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 #error {background: #ee1;}
@@ -51,9 +51,9 @@ li {
   color: #151515;
 	text-align: left;
   font-size: 62px;
-  font-family: Palatino, "Palatino Linotype", Serif;  
+  font-family: Palatino, "Palatino Linotype", Serif;
   text-decoration: none;
-	padding-left: 100px;	
+	padding-left: 100px;
 }
 
 #header span {
@@ -68,14 +68,12 @@ li {
 }
 
 #content {
-  width: 480px;
-  float: left;
 	text-align: left;
 }
 
 #content h3 {
 	color: #151515;
-  font-family: Palatino, "Palatino Linotype", Serif;  
+  font-family: Palatino, "Palatino Linotype", Serif;
   text-decoration: none;
 	font-size: 26px;
 }
@@ -84,73 +82,46 @@ li {
 }
 
 #sidebar {
-  width: 256px;
-	text-align: left;
-  float: right;
+  text-align: left;
 }
 
 #sidebar a {
-	text-decoration: none;
+  text-decoration: underline;
 }
 
-#sidebar dl dt{
+#sidebar ul {
+  line-height: 1.5;
+}
+
+#sidebar ul li {
+  margin-left: 0px;
+  padding: 0 10px 0 20px;
   background: inherit;
   color: #151515;
-  font-size: 25px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-	padding-left: 20px;
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-size: 1.2em;
 }
 
-#sidebar dl dt#dashboard { background: url("../images/server.png") no-repeat 0 center;	}
-#sidebar dl dt#vhosts_link { background: url("../images/transmit.png") no-repeat 0 center;	}
-#sidebar dl dt#users_link { background: url("../images/user_suit.png") no-repeat 0 center;	}
-#sidebar dl dt#connections_link { background: url("../images/connect.png") no-repeat 0 center;}
-#sidebar dl dt#queues_link { background: url("../images/basket.png") no-repeat 0 center;}
-#sidebar dl dt#bindings_link { background: url("../images/bindings.png") no-repeat 0 center;}
-#sidebar dl dt#exchanges_link { background: url("../images/exchanges.png") no-repeat 0 center;}
-#sidebar dl dt#permissions_link { background: url("../images/permission.png") no-repeat 0 center;}
+#sidebar ul li#dashboard {background: url("../images/server.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#vhosts_link {background: url("../images/transmit.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#users_link {background: url("../images/user_suit.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#connections_link {background: url("../images/connect.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#queues_link {background: url("../images/basket.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#bindings_link {background: url("../images/bindings.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#exchanges_link {background: url("../images/exchanges.png") no-repeat scroll 0 center transparent;}
+#sidebar ul li#permissions_link {background: url("../images/permission.png") no-repeat scroll 0 center transparent;}
 
-#sidebar dl dd {
-  margin-left: 2px;
-}
-
-#sidebar dl dt a:hover {
+#sidebar ul li a:hover {
   color: #000;
 }
 
 #sidebar .widget {
-  margin: 0 0 32px 0;
-}
-
-#sidebar dl {
-  line-height: 1.5;
-}
-
-#sidebar dd {
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #DDD;
-  font-size: 11px;
-}
-
-#sidebar dd a {
-  background: inherit;
-  color: #333;
-  text-decoration: underline;
-}
-
-#sidebar dd a:hover {
-  background: inherit;
-  color: #000;
-}
-
-#sidebar dl dd:last-child {
-  border: 0;
+  margin: 0 0 32px;
 }
 
 #footer {
 	border-top: 1px solid #999;
-  color: #115;	
+  color: #115;
   margin: 0 auto;
 	margin-top: 20px;
   padding-top: 30px;
@@ -188,14 +159,14 @@ th{}
 	width: 460px;
 }
 
-.sexy_table th.head {  
+.sexy_table th.head {
   background: #fff;
 }
-.sexy_table th {  
+.sexy_table th {
   background: #eef;
 }
 .sexy_table th
-{  
+{
 	padding: 12px 17px 12px 17px;
 	font-weight: normal;
 	font-size: 14px;

@@ -1,3 +1,10 @@
+wonderland (0.2) unstable; urgency=low
+
+  * Roman Kitaev <r.kitaev.dev@gmail.com>
+    ATS-603 - fix html-layout
+
+ -- knevcher <knevcher@gmail.com>  Thu, 26 Aug 2010 11:10:06 +0400
+
 wonderland (0.1) unstable; urgency=low
 
   * Initial release
