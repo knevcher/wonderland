@@ -1,8 +1,3 @@
-Wonderland is the web front-end to http://github.com/knevcher/alice
-
-
-Authors
-Ari Lerner
-
-http://alicetheapp.com
-
+Пакет представляет из себя:
+  - debian fork проекта: http://github.com/auser/wonderland
+  - web font-end для пакета: http://github.com/knevcher/alice (прямая зависимость)
